@@ -1,4 +1,10 @@
 from google import genai
+import tkinter
+
+winodw = tkinter.Tk()
+winodw.title("あいうえお作文生成")
+
+winodw.mainloop()
 
 client = genai.Client(api_key="API KEY入れてね")
 
