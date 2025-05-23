@@ -8,7 +8,7 @@ winodw.title("あいうえお作文生成")
 def show_message():
     label.config(text="")
 
-# ラベル
+# ラベルの作成
 label = tkinter.Label(winodw, text="")
 label.pack()
 
