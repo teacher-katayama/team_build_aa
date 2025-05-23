@@ -10,7 +10,7 @@ def on_button_click():
 
 
 button = tkinter.Button(
-    winodw, text="クリックしてね", width=50, height=2, command=on_button_click
+    winodw, text="作成！！", width=50, height=2, command=on_button_click
 )
 button.pack(side=tkinter.BOTTOM, pady=20)
 winodw.geometry("400x300")
