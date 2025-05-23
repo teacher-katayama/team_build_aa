@@ -12,10 +12,21 @@ def on_select(event):
     print(f"選択された文字: {selected}")
 
 
-winodw.title("プルダウンメニュー")
+winodw.title("ランダム作文")
 
 # 選択肢リスト
-choices = ["あ", "か", "さ", "た", "な", "は", "ま", "や", "ら", "わ"]
+choices = [
+    "あ行",
+    "か行",
+    "さ行",
+    "た行",
+    "な行",
+    "は行",
+    "ま行",
+    "や行",
+    "ら行",
+    "わ行",
+]
 
 combo = ttk.Combobox(
     winodw, values=choices, state="readonly"
@@ -29,7 +40,7 @@ winodw.mainloop()
 
 winodw.mainloop()
 
-client = genai.Client(api_key="AIzaSyAI1-EwRlxhJXHaaskbxY1Xyjus1QP9wFM")
+client = genai.Client(api_key="")
 
 response = client.models.generate_content(
     model="gemini-2.0-flash",
