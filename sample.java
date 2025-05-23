@@ -11,5 +11,6 @@ public class sample {
         System.out.println("う：" + word_u);
         System.out.println("え：" + word_e);
         System.out.println("お：" + word_o);
+        
     }
 }
