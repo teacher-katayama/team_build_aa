@@ -5,10 +5,16 @@ from google import genai
 
 winodw = tkinter.Tk()
 winodw.title("あいうえお作文生成")
+# メッセージを表示する関数
+def show_message():
+    label.config(text="")
+
+# ラベルの作成
+label = tkinter.Label(winodw, text="")
+label.pack()
 
 def on_button_click():
     print("ボタンがクリックされました！")
-
 
 button = tkinter.Button(
     winodw, text="作成！！", width=50, height=2, command=on_button_click

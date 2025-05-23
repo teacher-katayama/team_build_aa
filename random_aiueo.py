@@ -4,9 +4,17 @@ import tkinter
 winodw = tkinter.Tk()
 winodw.title("あいうえお作文生成")
 
+# メッセージを表示する関数
+def show_message():
+    label.config(text="")
+
+# ラベルの作成
+label = tkinter.Label(winodw, text="")
+label.pack()
+
 winodw.mainloop()
 
-client = genai.Client(api_key="API KEY入れてね")
+client = genai.Client(api_key="")
 
 response = client.models.generate_content(
     model="gemini-2.0-flash", 
