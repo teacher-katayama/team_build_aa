@@ -6,10 +6,19 @@ from google import genai
 winodw = tkinter.Tk()
 winodw.title("あいうえお作文生成")
 
+def on_button_click():
+    print("ボタンがクリックされました！")
+
+
+button = tkinter.Button(
+    winodw, text="作成！！", width=50, height=2, command=on_button_click
+)
+button.pack(side=tkinter.BOTTOM, pady=20)
+winodw.geometry("400x300")
+
 def on_select(event):
     selected = combo.get()
     print(f"選択された文字: {selected}")
-
 
 winodw.title("ランダム作文")
 
@@ -48,4 +57,5 @@ response = client.models.generate_content(
             あいうえお作文のみを記述してください。\
             ひとつのみ記述してください。",
 )
+
 print(response.text)
