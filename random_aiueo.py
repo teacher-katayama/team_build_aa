@@ -14,7 +14,7 @@ label.pack()
 
 winodw.mainloop()
 
-client = genai.Client(api_key="AIzaSyAI1-EwRlxhJXHaaskbxY1Xyjus1QP9wFM")
+client = genai.Client(api_key="")
 
 response = client.models.generate_content(
     model="gemini-2.0-flash", 
