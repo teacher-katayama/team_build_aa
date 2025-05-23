@@ -9,7 +9,7 @@ def show_message():
     label.config(text="あいうえお")
 
 # ラベル
-label = tkinter.Label(winodw, text="あいうえお作文")
+label = tkinter.Label(winodw, text="")
 label.pack()
 
 winodw.mainloop()
