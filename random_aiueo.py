@@ -6,7 +6,7 @@ winodw.title("あいうえお作文生成")
 
 # メッセージを表示する関数
 def show_message():
-    label.config(text="あいうえお")
+    label.config(text="")
 
 # ラベル
 label = tkinter.Label(winodw, text="")
